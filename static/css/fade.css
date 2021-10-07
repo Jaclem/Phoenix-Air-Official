@@ -1,0 +1,16 @@
+
+/* Main Content fade */
+
+#unseenContainer {
+    opacity: 0;
+    transform: translate(-50px);
+    transition: 0.5s all ease-in-out;
+} 
+
+#visibleSlider {
+    opacity: 1;
+    transform: translate(0px);
+} 
+
+
+/* -- End Main Content fade */

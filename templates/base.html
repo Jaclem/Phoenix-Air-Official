@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fade.css') }}">
+</head>
+<body>
+ 
+  <header>
+    <img src="/static/images/Phoenix.PNG" alt="">
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+      </ul>
+  </header>
+
+  {% block content %}
+  {% endblock %}
+  <!-- Adding block content in the middle so all content goes between the header and the footer -->
+
+  <footer class="footer">
+      <div class="address">
+        <h3>Address</h3>
+        &nbsp;
+        <address>
+          Phoenix Air Services, Inc<br>
+          4 Kidder Rd<br>
+          Chelmsford, MA 01824
+      </address>
+      </div>
+      <div class="team">
+        <h3>Our Team</h3>
+        &nbsp;
+        <p>
+          <b>Bob Beauchemin</b>, Owner, Head Service Technician<br>
+          <b>Troy Guilmette</b>, Service Technician<br>
+          <b>David Piper</b>, Service Technician<br>
+          <b>Laura Beauchemin</b>, Office Manager<br>
+          <b>Lindsey Clement</b>, Office Assistant
+        </p>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        &nbsp;
+        <p>
+          <b>Bob Beauchemin</b><br>
+          Phone: <em>(978) 250-4944</em><br>
+          <a href="mailto:Bobpairserv@aol.com">Bobpairserv@aol.com</a><br>
+        </p>
+      </div>
+  </footer>
+
+</body>
+</html>
