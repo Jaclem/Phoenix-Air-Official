@@ -62,12 +62,11 @@ header li a {
 /* Home Page Mission Statement Banner */
 
 .bannerWrapper {    
-    height: 600px;
+    height: 800px;
     box-shadow: 0 0 10px 0 black;
     padding-top: 60px;
     background-color: #F0F1BF;
-    
-    /* background-color: #F9E994; */
+
 }
 
 .bannerContent {
@@ -75,12 +74,11 @@ header li a {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .bannerContent h1 {
     font-size: 4.4rem;
-    padding: 150px 10px 10px 10px;
+    padding: 250px 10px 10px 10px;
     color: #74291E;
 }
 
@@ -113,7 +111,6 @@ hr.baseBreak {
 
 /* Main Image Content */
 
-
 .mainContainer {
     margin-left: auto;
     margin-right: auto;
@@ -123,9 +120,11 @@ hr.baseBreak {
     border-bottom: 1px solid #ddd;
     border-radius: 5px;
     overflow: auto; /* Allows Image to float right inside the div without breaking*/
-    padding: 25px 25px 45px 25px;
+    padding: 25px 25px 65px 25px;
     position: relative;    
 }
+
+/* Main content fade effects */
 
 .beforeScroll {
     opacity: 0;
@@ -137,6 +136,8 @@ hr.baseBreak {
     opacity: 1;
     transform: translateX(0px); /* Repositions element where it was originally after JS adds class to it */
 }
+
+/* -- End Main conentent fade effects */
 
 .mainContainerText {
     margin: 40px;
@@ -184,8 +185,8 @@ hr.baseBreak {
     border: 5px solid white;
 }
 
-/* -- Main Image Content */
-/* -- Images in Div Containers */
+/* -- End Main Image Content */
+/* -- End Images in Div Containers */
 
 /* Contact Page */
 
