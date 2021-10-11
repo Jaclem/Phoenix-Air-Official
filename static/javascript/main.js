@@ -1,7 +1,12 @@
-// Starting the fade in effect for main content
+// fade-in effect on main page content
 
-const opacityTrick = document.querySelector('.beforeScroll');
 
-opacityTrick.classList.add('afterScroll');
+window.addEventListener("scroll", (event) => {
+    const fadeSelector = document.querySelector('.beforeScroll');
+    const scrollY = window.pageYOffset; //
 
-console.log(opacityTrick);
+    if (scrollY >= 400){
+        fadeSelector.classList.add('afterScroll');
+    }
+    console.log(scrollY);
+});
