@@ -2,11 +2,22 @@
 
 
 window.addEventListener("scroll", (event) => {
-    const fadeSelector = document.querySelector('.beforeScroll');
-    const scrollY = window.pageYOffset; //
+    const firstSelector = document.getElementById('fadeScroller1');
+    const secondSelector = document.getElementById('fadeScroller2');
+    const thirdSelector = document.getElementById('fadeScroller3')
+
+    let scrollY = window.pageYOffset; // constant containing the y-position of page
+
 
     if (scrollY >= 400){
-        fadeSelector.classList.add('afterScroll');
+        firstSelector.classList.add('afterScroll');
     }
+    if (scrollY >= 1000){
+        secondSelector.classList.add('afterScroll');
+    }
+    if (scrollY >= 1500){
+        thirdSelector.classList.add('afterScroll');
+    }
+
     console.log(scrollY);
 });

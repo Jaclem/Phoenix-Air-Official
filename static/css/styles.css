@@ -26,7 +26,6 @@ header {
 
 header img {
     height: 100%;
-    margin-left: 20px;
     float: left;
 }
 
@@ -100,7 +99,6 @@ header li a {
 /* Content Separater */
 hr.baseBreak {
     margin-top: 80px;
-    margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -117,11 +115,14 @@ hr.baseBreak {
     margin-top: 40px;
     width: 80%;
     font-size: 20px;
+    position: relative;    
+}
+
+.mainContainer div {
     border-bottom: 1px solid #ddd;
     border-radius: 5px;
+    padding: 65px 25px 65px 25px;
     overflow: auto; /* Allows Image to float right inside the div without breaking*/
-    padding: 25px 25px 65px 25px;
-    position: relative;    
 }
 
 /* Main content fade effects */
@@ -130,6 +131,12 @@ hr.baseBreak {
     opacity: 0;
     transition: 0.7s all ease-in-out;
     transform: translateX(-30px); /* Sets the position of the element -30px to the left */
+}
+
+.beforeScrollOpp {
+    opacity: 0;
+    transition: 0.7s all ease-in-out;
+    transform: translateX(30px); /* Sets the position of the element -30px to the left */
 }
 
 .afterScroll {
