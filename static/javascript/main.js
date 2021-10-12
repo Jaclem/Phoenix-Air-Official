@@ -1,23 +1,22 @@
-// fade-in effect on main page content
+// created 3 constants that select the specific divs on main page to be faded
 
+const firstSelector = document.getElementById('fadeScroller1');
+const secondSelector = document.getElementById('fadeScroller2');
+const thirdSelector = document.getElementById('fadeScroller3');
 
+// function that adds a specific class to the argument that is passed to it
+function addClass(selector){
+    selector.classList.add('afterScroll');
+}
+
+// event listener that finds the y-position and trigers events when it hits certain values
 window.addEventListener("scroll", (event) => {
-    const firstSelector = document.getElementById('fadeScroller1');
-    const secondSelector = document.getElementById('fadeScroller2');
-    const thirdSelector = document.getElementById('fadeScroller3')
 
     let scrollY = window.pageYOffset; // constant containing the y-position of page
 
-
-    if (scrollY >= 400){
-        firstSelector.classList.add('afterScroll');
-    }
-    if (scrollY >= 1000){
-        secondSelector.classList.add('afterScroll');
-    }
-    if (scrollY >= 1500){
-        thirdSelector.classList.add('afterScroll');
-    }
+    if (scrollY >= 400){ addClass(firstSelector); }
+    if (scrollY >= 1000){ addClass(secondSelector); }
+    if (scrollY >= 1500){ addClass(thirdSelector); }
 
     console.log(scrollY);
 });
