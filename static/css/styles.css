@@ -51,7 +51,7 @@ header a {
 header li a {
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     
 }
@@ -61,11 +61,14 @@ header li a {
 /* Home Page Mission Statement Banner */
 
 .bannerWrapper {    
-    height: 800px;
+    height: 600px;
     box-shadow: 0 0 10px 0 black;
     padding-top: 60px;
-    background-color: #F0F1BF;
-
+    /* background-color: #F0F1BF; */
+    background: linear-gradient(to top, #9085c2ba, #c56b6bb9), url('../images/testphoto.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .bannerContent {
@@ -76,16 +79,20 @@ header li a {
 }
 
 .bannerContent h1 {
-    font-size: 4.4rem;
-    padding: 250px 10px 10px 10px;
-    color: #74291E;
+    font-size: 5.4rem;
+    font-weight: bolder;
+    margin-top: 150px;
+    /* padding: 150px 10px 10px 10px; */
+    /* color: #74291E; */
+    color: white;
+    background-color: rgba(72, 72, 199, 0.253);
 }
 
 .bannerContent p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #595959;
+    color: white;
 }
 
 .bannerContent p, h1 {
@@ -147,49 +154,51 @@ hr.baseBreak {
 /* -- End Main conentent fade effects */
 
 .mainContainerText {
-    margin: 40px;
+    margin: 10px 40px 40px 40px;
 }
 
 .mainContainer h1 {
     text-align: center;
-    color: black;
+    color: rgba(31, 30, 30, 0.781);
+    font-size: 50px;
 }
 
 .mainContainer p {
     color: #595959;
     font-style: italic;
+    font-size: 25px;
 }
 
 /* Images in Div Containers */
 
 .mainContainerImage-1 {
-    margin-left: 25px;
+    margin-left: 35px;
     margin-right: 25px;
     width: 450px;
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid white;
+    border: 5px solid lightblue;
 }
 
 .mainContainerImage-2 {
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 35px;
     width: 450px;
     height: 350px;
     border-radius: 7px;
     float: left;
-    border: 5px solid white;
+    border: 5px solid lightblue;
 }
 
 .mainContainerImage-3 {
-    margin-left: 25px;
+    margin-left: 35px;
     margin-right: 25px;
     width: 450px;
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid white;
+    border: 5px solid lightblue;
 }
 
 /* -- End Main Image Content */
