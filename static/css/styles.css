@@ -5,7 +5,9 @@
 
 /* Navigation Bar */
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Cormorant Garamond', serif;
@@ -15,13 +17,13 @@ body {
 }
 
 header {
-    /* background-color: white; */
     background-color: white;
     position: relative;
     vertical-align: middle;
     width: 100%;
     height: 80px;
-    box-shadow: 0 0 25px 0 black;
+    box-shadow: 0 0 10px 0 black;
+    margin-bottom: 50px;
 }
 
 header img {
@@ -50,10 +52,8 @@ header a {
 
 header li a {
     color: black;
-    font-weight: bold;
-    font-size: 20px;
     text-decoration: none;
-    
+    font-size: 20px;
 }
 
 /* -- End of Navigation Bar */
@@ -62,11 +62,9 @@ header li a {
 
 .bannerWrapper {    
     height: 600px;
-    box-shadow: 0 0 10px 0 black;
     padding-top: 60px;
-    /* background-color: #F0F1BF; */
-    background: linear-gradient(to top, #9085c2ba, #c56b6bb9), url('../images/testphoto.jpg');
-    background-position: center; /* Center the image */
+    background: linear-gradient(to top, #9085c291, #c56b6b86), url('../images/townhouses.jpg');
+    background-position: 50% 30%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
@@ -80,12 +78,9 @@ header li a {
 
 .bannerContent h1 {
     font-size: 5.4rem;
-    font-weight: bolder;
     margin-top: 150px;
-    /* padding: 150px 10px 10px 10px; */
-    /* color: #74291E; */
+    font-weight: bolder;
     color: white;
-    background-color: rgba(72, 72, 199, 0.253);
 }
 
 .bannerContent p {
@@ -105,7 +100,7 @@ header li a {
 
 /* Content Separater */
 hr.baseBreak {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -116,10 +111,11 @@ hr.baseBreak {
 
 /* Main Image Content */
 
+
 .mainContainer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 80%;
     font-size: 20px;
     position: relative;    
@@ -131,6 +127,19 @@ hr.baseBreak {
     padding: 65px 25px 65px 25px;
     overflow: auto; /* Allows Image to float right inside the div without breaking*/
 }
+
+.mainContainer div:nth-child(odd){
+    background-color: #f2f2f262;
+}
+
+.ourStory {
+    text-align: center;
+}
+
+.ourStory p {
+    margin: 50px 100px 100px 100px;
+}
+
 
 /* Main content fade effects */
 
@@ -166,7 +175,7 @@ hr.baseBreak {
 .mainContainer p {
     color: #595959;
     font-style: italic;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Images in Div Containers */
@@ -178,7 +187,7 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid lightblue;
+    border: 5px solid rgba(72, 72, 199, 0.253);
 }
 
 .mainContainerImage-2 {
@@ -198,7 +207,7 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid lightblue;
+    border: 5px solid rgba(72, 72, 199, 0.253);
 }
 
 /* -- End Main Image Content */
@@ -206,13 +215,28 @@ hr.baseBreak {
 
 /* Contact Page */
 
-.contactFormWrapper {
-    padding-top: 150px;
-    height: 300px;
+form {
     margin-right: auto;
     margin-left: auto;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    margin-top: 60px;
     width: 70%;
+    padding: 30px;
+    border-radius: 5px;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;  
+  }
+  
+
+
 
 /* -- Contact Page */
 
@@ -223,8 +247,7 @@ hr.baseBreak {
     position: relative;
     width: 100%;
     height: 200px;
-    bottom: -60px;
-     /* Sets the footer under the above content */
+    bottom: -60px; /* Sets the footer under the above content */
     box-shadow: 0 0 7px 0 rgb(51, 51, 51);
     margin-top: 60px;
 }
