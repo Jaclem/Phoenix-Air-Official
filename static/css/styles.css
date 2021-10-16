@@ -17,12 +17,12 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: #fffee6;
     position: relative;
     vertical-align: middle;
     width: 100%;
     height: 80px;
-    box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 10px 0 #a5a144;
     margin-bottom: 50px;
 }
 
@@ -74,6 +74,8 @@ header li a {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .bannerContent h1 {
@@ -187,7 +189,8 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid rgba(72, 72, 199, 0.253);
+    border: 5px solid rgb(255 245 0);
+    box-shadow: 2px 2px 2px grey;
 }
 
 .mainContainerImage-2 {
@@ -197,7 +200,8 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: left;
-    border: 5px solid lightblue;
+    border: 5px solid rgb(255 245 0);
+    box-shadow: -2px 2px 2px grey;
 }
 
 .mainContainerImage-3 {
@@ -207,7 +211,8 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid rgba(72, 72, 199, 0.253);
+    border: 5px solid rgb(255 245 0);
+    box-shadow: 2px 2px 2px grey;
 }
 
 /* -- End Main Image Content */
@@ -215,15 +220,36 @@ hr.baseBreak {
 
 /* Contact Page */
 
+.contactText {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+    width: 60%;
+}
+
+.contactText h1 {
+    color: rgba(31, 30, 30, 0.781);
+}
+
+.contactText p {
+    margin: 20px 100px 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+
 form {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 100px;
     background-color: #f2f2f2;
     font-size: 20px;
     margin-top: 60px;
-    width: 70%;
+    width: 50%;
     padding: 30px;
     border-radius: 5px;
+    box-shadow: 2px 1px 4px rgb(92, 92, 92);
 }
 
 input[type=text], select, textarea {
@@ -234,8 +260,17 @@ input[type=text], select, textarea {
     border: 2px solid #ccc;
     border-radius: 4px;  
   }
-  
 
+  input[type=submit] {
+      padding: 10px;
+      font-size: 15px;
+      background-color: #00e600;
+      border-radius: 5px;
+  }
+
+  input[type=submit]:hover {
+      background-color: #01ac01;
+  }
 
 
 /* -- Contact Page */

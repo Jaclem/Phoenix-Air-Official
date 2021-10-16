@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block title %}
+{% endblock %}
+{% block content %}
+
+<div class="contactText">
+    <h1>Contact Us</h1>
+    <p>
+        Have a question about something HVAC-related, 
+        or just need to get in touch? Use the contact form below, or call us at
+    </p>
+
+    <p>
+        {{first_name, last_name, email, phone_number, message}}
+    </p>
+</div>
+
+
+{% endblock %}

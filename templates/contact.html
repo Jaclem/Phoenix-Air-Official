@@ -1,30 +1,37 @@
 {% extends 'base.html'%}
 {% block title %}
-    Contact
+    {{title}}
 {% endblock %}
 {% block content %}
 
-<hr class="baseBreak">
+<div class="contactText">
+    <h1>Contact Us</h1>
+    <p>
+        Have a question about something HVAC-related, 
+        or just need to get in touch? Use the contact form below, or call us at
+    </p>
 
-<form>
+    <h4>{{ error_statement }}</h4> <!-- Pass the error statement if all form fields are not filled out -->
+</div>
+
+<form action="/form" method="POST">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" placeholder="Your First Name..">
+    <input type="text" name="fname" placeholder="Your First Name.." value="{{ first_name }}">
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" placeholder="Your Last Name..">
+    <input type="text" name="lname" placeholder="Your Last Name.." value="{{ last_name }}">
 
-    <label for="email">E-Mail</label>
-    <input type="text" id="email" placeholder="Your email..">
+    <label for="email">Email</label>
+    <input type="text" name="email" placeholder="Your email.." value="{{ email }}">
 
     <label for="phone">Phone Number</label>
-    <input type="text" id="phone" placeholder="Your phone number..">
+    <input type="text" name="phone" placeholder="Your phone number.." value="{{ phone_number }}">
 
     <label for="message">Message</label>
-    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here.."></textarea>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here.." value="{{ message }}"></textarea>
 
     <input type="submit" value="Submit">
 </form>
 
-<hr class="baseBreak">
 
 {% endblock %}
