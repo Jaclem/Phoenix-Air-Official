@@ -17,8 +17,8 @@
     <img src="/static/images/Phoenix.PNG" alt="">
       <ul>
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="#companyStory">Our Story</a></li>
-        <li><a href="#fadeScroller1">Services</a></li>
+        <li><a href="{{ url_for('home', _anchor='companyStory') }}">Our Story</a></li> <!-- _anchor allows the site to redirect to the home page and bring you to the specific ID location set in quotation -->
+        <li><a href="{{ url_for('home', _anchor='fadeScroller1') }}">Services</a></li>
         <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
       </ul>
   </header>

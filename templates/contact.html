@@ -7,27 +7,27 @@
 <div class="contactText">
     <h1>Contact Us</h1>
     <p>
-        Have a question about something HVAC-related, 
-        or just need to get in touch? Use the contact form below, or call us at
+        If you have any HVAC related questions please feel free to send us a message
+        below.
     </p>
-
-    <h4>{{ error_statement }}</h4> <!-- Pass the error statement if all form fields are not filled out -->
 </div>
 
+<h4 class="error">{{ error_statement }}</h4> <!-- Pass the error statement if all form fields are not filled out -->
+
 <form action="/form" method="POST">
-    <label for="fname">First Name</label>
+    <label for="fname">First Name *</label>
     <input type="text" name="fname" placeholder="Your First Name.." value="{{ first_name }}">
 
-    <label for="lname">Last Name</label>
+    <label for="lname">Last Name *</label>
     <input type="text" name="lname" placeholder="Your Last Name.." value="{{ last_name }}">
 
-    <label for="email">Email</label>
+    <label for="email">Email *</label>
     <input type="text" name="email" placeholder="Your email.." value="{{ email }}">
 
-    <label for="phone">Phone Number</label>
+    <label for="phone">Phone Number *</label>
     <input type="text" name="phone" placeholder="Your phone number.." value="{{ phone_number }}">
 
-    <label for="message">Message</label>
+    <label for="message">Message *</label>
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here.." value="{{ message }}"></textarea>
 
     <input type="submit" value="Submit">

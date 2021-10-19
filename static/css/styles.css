@@ -45,6 +45,7 @@ header li {
     height: 100%;
 }
 
+
 header a {
     height: 100%;
     padding: 30px 20px 20px 20px;
@@ -56,6 +57,7 @@ header li a {
     font-size: 20px;
 }
 
+
 /* -- End of Navigation Bar */
 
 /* Home Page Mission Statement Banner */
@@ -63,7 +65,7 @@ header li a {
 .bannerWrapper {    
     height: 600px;
     padding-top: 60px;
-    background: linear-gradient(to top, #9085c291, #c56b6b86), url('../images/townhouses.jpg');
+    background: linear-gradient(to top, #ebd25791, #c5660385), url('../images/townhouses.jpg');
     background-position: 50% 30%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -233,10 +235,16 @@ hr.baseBreak {
 }
 
 .contactText p {
-    margin: 20px 100px 50px;
+    margin: 20px 100px 30px;
     padding-bottom: 30px;
     font-size: 20px;
     font-style: italic;
+}
+
+.error {
+    margin-top: 30px;
+    text-align: center;
+    color: red;
 }
 
 form {

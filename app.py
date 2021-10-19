@@ -31,14 +31,7 @@ def form():
             phone_number=phone_number, 
             message=message)
 
-    return render_template("form.html", 
-        first_name=first_name, 
-        last_name=last_name, 
-        email=email, 
-        phone_number=phone_number, 
-        message=message)
-
-    
+    return render_template("contact.html") 
 
 if __name__ == "__main__":
     app.run(debug=True)
