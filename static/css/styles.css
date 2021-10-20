@@ -241,8 +241,7 @@ hr.baseBreak {
 
 .contactText {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
     border-bottom: 1px solid rgba(128, 128, 128, 0.514);
     width: 60%;
 }
@@ -264,6 +263,12 @@ hr.baseBreak {
     color: red;
 }
 
+.success {
+    margin-top: 30px;
+    text-align: center;
+    color: #595959;
+}
+
 form {
     margin-right: auto;
     margin-left: auto;
@@ -277,7 +282,7 @@ form {
     box-shadow: 2px 1px 4px rgb(92, 92, 92);
 }
 
-input[type=text], select, textarea {
+input[type=text],[type=tel], select, textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -289,14 +294,14 @@ input[type=text], select, textarea {
   input[type=submit] {
       padding: 10px;
       font-size: 15px;
-      color: rgb(31 30 30 / 78%);
+      color: white;
       font-weight: bold;
-      background-color: #62acb5;
+      background-color: #5d81bf;
       border-radius: 5px;
   }
 
   input[type=submit]:hover {
-      background-color: #4a828ad3;
+      background-color: #3d5783;
       color: white;
       cursor: pointer;
   }

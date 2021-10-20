@@ -12,7 +12,8 @@
     </p>
 </div>
 
-<h4 class="error">{{ error_statement }}</h4> <!-- Pass the error statement if all form fields are not filled out -->
+<h3 class="error">{{ error_statement }}</h3> <!-- Pass the error statement if all form fields are not filled out -->
+<h3 class="success">{{ success_statement }}</h3> <!-- Pass the error statement if all form fields are not filled out -->
 
 <form action="/form" method="POST">
     <label for="fname">First Name *</label>
@@ -25,7 +26,7 @@
     <input type="text" name="email" placeholder="Your email.." value="{{ email }}">
 
     <label for="phone">Phone Number *</label>
-    <input type="text" name="phone" placeholder="Your phone number.." value="{{ phone_number }}">
+    <input type="tel" name="phone" placeholder="Your phone number.." value="{{ phone_number }}">
 
     <label for="message">Message *</label>
     <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here.." value="{{ message }}"></textarea>

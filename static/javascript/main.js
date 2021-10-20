@@ -17,6 +17,4 @@ window.addEventListener("scroll", (event) => {
     if (scrollY >= 550){ addClass(firstSelector); }
     if (scrollY >= 1100){ addClass(secondSelector); }
     if (scrollY >= 1570){ addClass(thirdSelector); }
-
-    console.log(scrollY);
 });
