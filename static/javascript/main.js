@@ -14,7 +14,7 @@ window.addEventListener("scroll", (event) => {
 
     let scrollY = window.pageYOffset; // constant containing the y-position of page
 
-    if (scrollY >= 600){ addClass(firstSelector); }
+    if (scrollY >= 550){ addClass(firstSelector); }
     if (scrollY >= 1100){ addClass(secondSelector); }
     if (scrollY >= 1570){ addClass(thirdSelector); }
 
