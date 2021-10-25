@@ -16,14 +16,11 @@
 <h3 class="success">{{ success_statement }}</h3> <!-- Pass the error statement if all form fields are not filled out -->
 
 <form action="/form" method="POST">
-    <label for="fname">First Name *</label>
-    <input type="text" name="fname" placeholder="Your First Name.." value="{{ first_name }}">
-
-    <label for="lname">Last Name *</label>
-    <input type="text" name="lname" placeholder="Your Last Name.." value="{{ last_name }}">
+    <label for="name">Name *</label>
+    <input type="text" name="name" placeholder="Joe Smith" value="{{ first_name }}">
 
     <label for="email">Email *</label>
-    <input type="text" name="email" placeholder="Your email.." value="{{ email }}">
+    <input type="text" name="email" placeholder="Joesmith@gmail.com" value="{{ email }}">
 
     <label for="phone">Phone Number *</label>
     <input type="tel" name="phone" placeholder="Your phone number.." value="{{ phone_number }}">
