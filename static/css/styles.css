@@ -187,6 +187,7 @@ hr.baseBreak {
 .mainContainer h1 {
     text-align: center;
     color: rgba(31, 30, 30, 0.781);
+    font-size: 35px;
 }
 
 .mainContainer p {
@@ -208,7 +209,7 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid rgb(255 245 0);
+    border: 7px solid rgb(249 244 132);
     box-shadow: 2px 2px 2px grey;
 }
 
@@ -218,7 +219,7 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: left;
-    border: 5px solid rgb(255 245 0);
+    border: 7px solid rgb(249 244 132);
     box-shadow: -2px 2px 2px grey;
 }
 
@@ -229,7 +230,7 @@ hr.baseBreak {
     height: 350px;
     border-radius: 7px;
     float: right;
-    border: 5px solid rgb(255 245 0);
+    border: 7px solid rgb(249 244 132);
     box-shadow: 2px 2px 2px grey;
 }
 
@@ -259,7 +260,7 @@ hr.baseBreak {
 .error {
     margin-top: 30px;
     text-align: center;
-    color: red;
+    color: rgb(230, 36, 36);
 }
 
 .success {
@@ -318,6 +319,7 @@ input[type=text],[type=tel], select, textarea {
     bottom: -60px; /* Sets the footer under the above content */
     box-shadow: 0 0 7px 0 rgb(51, 51, 51);
     margin-top: 60px;
+    padding-left: 40px;
 }
 
 .footer div {
