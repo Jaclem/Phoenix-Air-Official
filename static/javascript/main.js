@@ -1,8 +1,6 @@
 // created 3 constants that select the specific divs on main page to be faded
 
-const firstSelector = document.getElementById('fadeScroller1');
-const secondSelector = document.getElementById('fadeScroller2');
-const thirdSelector = document.getElementById('fadeScroller3');
+const imageGallery = document.getElementById('img-gal');
 
 // function that adds a specific class to the argument that is passed to it
 function addClass(selector){
@@ -13,8 +11,6 @@ function addClass(selector){
 window.addEventListener("scroll", (event) => {
 
     let scrollY = window.pageYOffset; // constant containing the y-position of page
-
-    if (scrollY >= 480){ addClass(firstSelector); }
-    if (scrollY >= 880){ addClass(secondSelector); }
-    if (scrollY >= 1380){ addClass(thirdSelector); }
+    console.log(scrollY);
+    if (scrollY >= 700){ addClass(imageGallery); }
 });

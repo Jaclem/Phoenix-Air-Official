@@ -16,9 +16,8 @@
 
 <hr class="baseBreak">
 
-<div class="mainContainer" >
-    <div class="ourStory" id="companyStory">
-        <h1>Our Story</h1>
+<div class="ourStory" id="ourStory">
+    <h1>Our Story</h1>
         <p>
             Phoenix Air Services, Inc. is a well-established, family owned and operated industrial and commercial HVAC service company.
             Phoenix Air Services was founded in 1990 by Bernie Beauchemin, and for the last 10 years, his son, Bob Beauchemin has made 
@@ -27,43 +26,49 @@
             and commercial businesses because we have reliable and trustworthy suppliers and subcontractors 
             we have partnered with over these last 30 years.
         </p>
+</div>
+
+<h1 class="gal-msg" id="services">Have a look at some of our work</h1>
+
+<div class="container beforeScroll" id="img-gal">
+    <div class="col-1">
+        <img src="/static/images/CCE chiller finished 006.jpg">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
     </div>
 
-    <div class="beforeScroll" id="fadeScroller1">
-        <img src="/static/images/CCE chiller finished 006.jpg" class="mainContainerImage-1" alt="">
-        <h1>Trane 60 Ton Air Cooled Chiller</h1>
-        <p class="mainContainerText">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
-            venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. 
-            Fusce luctus vestibulum augue ut aliquet. Mauris
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,  -->
-        </p>
+    <div class="col-2">
+        <img src="/static/images/Cape Cod Eye 9-2013 001.JPG">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
     </div>
 
-    <div class="beforeScrollOpp" id="fadeScroller2">
-        <img src="/static/images/Cape Cod Eye 9-2013 001.JPG" class="mainContainerImage-2" alt="">
-        <h1>T.A.C.O 25 HP Heating Pump Boiler Room Renovation</h1>
-        <p class="mainContainerText">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
-            venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. 
-            Fusce luctus vestibulum augue ut aliquet. Mauris
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,  -->
-        </p>
+    <div class="col-3">
+        <img src="/static/images/BESLC Chiller 002.JPG">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
     </div>
-    
-    <div class="beforeScroll" id="fadeScroller3">
-        <img src="/static/images/BESLC Chiller 002.JPG" class="mainContainerImage-3" alt="">
-        <h1>Carrier 70 Ton Air Cooled Chiller Surgery Center Chiller Replacement</h1>
-        <p class="mainContainerText">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula 
-            venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. 
-            Fusce luctus vestibulum augue ut aliquet. Mauris
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,  -->
-        </p>
+
+    <span class="break"></span>
+
+    <div class="col-4">
+        <img src="/static/images/image2 (4).jpeg">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
     </div>
+
+    <div class="col-5">
+        <img src="/static/images/image7.jpeg">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
+    </div>
+
+    <div class="col-6">
+        <img src="/static/images/ins pumps1.JPG">
+        <h2>Trane 60 Ton Air Cooled Chiller</h2>
+    </div>
+</div>
+
+<div class="outro">
+    <h2>Interested in Phoenix?</h2>
+    <p>Let us work with you</p>
+    <br>
+    <a href="{{ url_for('contact') }}" class="contact-btn">Send Us A Message</a>
 </div>
 
 <script src="../static/javascript/main.js"></script>
