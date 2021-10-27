@@ -381,6 +381,28 @@ input[type=text],[type=tel], select, textarea {
 
 /* Media Queries */
 
+@media screen and (max-width: 1570px) and (min-width: 1480px) {
+    .container div {
+        width: 27%;
+    }
+
+    .col-1 img,
+    .col-2 img,
+    .col-3 img {
+        height: 280px;
+        margin-top: 10px;
+    }
+
+    .col-4 img,
+    .col-5 img,
+    .col-6 img {
+        height: 500px;
+        margin-top: 10px;
+    }
+
+
+}
+
 @media (max-width: 1480px)  { 
 
      .address, 
@@ -407,7 +429,7 @@ input[type=text],[type=tel], select, textarea {
 
  }
 
- @media screen and (max-width: 1095px) and (min-width: 480px) {
+ @media screen and (max-width: 1095px) and (min-width: 900px) {
 
     nav {
         flex-direction: column; 
@@ -461,7 +483,7 @@ input[type=text],[type=tel], select, textarea {
     }
 
     .container div {
-        width: 40%;
+        width: 190px;
     }
 
     .col-1 img,
@@ -476,6 +498,88 @@ input[type=text],[type=tel], select, textarea {
     .col-6 img {
         height: 230px;
         margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+    }
+ }
+
+ @media screen and (max-width: 900px) and (min-width: 375px) {
+
+    nav {
+        flex-direction: column; 
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav img {
+        margin: 0 auto;
+        height: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    .bannerWrapper {
+        height: 250px;
+        padding-top: 35px;
+    }
+
+    .bannerContent h1{
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .bannerContent p {
+        font-size: 15px;
+    }
+
+    .ourStory {
+        padding: 5px 10px;
+        width: 95%;
+    }
+
+    .gal-msg {
+        width: 90%
+    }
+
+    .container {
+        justify-content: space-around;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .container div {
+        width: 190px;
+        margin: 10px 0;
+    }
+
+    .col-1 img,
+    .col-2 img,
+    .col-3 img {
+        height: 130px;
+        margin-top: 10px;
+    }
+
+    .col-4 img,
+    .col-5 img,
+    .col-6 img {
+        height: 230px;
+        margin-top: 10px;
+    }
+
+    .outro {
+        width: 100%;
+        padding: 20px;
     }
 
     .footer {
