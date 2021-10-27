@@ -392,6 +392,7 @@ input[type=text],[type=tel], select, textarea {
 
      .footer {
         height: 100%;
+        padding: 0;
      }
 
      .footer div {
@@ -404,4 +405,80 @@ input[type=text],[type=tel], select, textarea {
          float: none;
      }
 
+ }
+
+ @media screen and (max-width: 1095px) and (min-width: 480px) {
+
+    nav {
+        flex-direction: column; 
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav img {
+        margin: 0 auto;
+        height: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    .bannerWrapper {
+        height: 250px;
+        padding-top: 35px;
+    }
+
+    .bannerContent h1{
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .bannerContent p {
+        font-size: 15px;
+    }
+
+    .ourStory {
+        padding: 5px 10px;
+        width: 95%;
+    }
+
+    .gal-msg {
+        width: 90%
+    }
+
+    .container {
+        justify-content: space-around;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .container div {
+        width: 40%;
+    }
+
+    .col-1 img,
+    .col-2 img,
+    .col-3 img {
+        height: 130px;
+        margin-top: 10px;
+    }
+
+    .col-4 img,
+    .col-5 img,
+    .col-6 img {
+        height: 230px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0;
+    }
  }
