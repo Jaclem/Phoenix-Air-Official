@@ -174,6 +174,10 @@ hr.baseBreak {
     margin: 0 auto;
     background-color:rgb(51, 51, 51);
     border-radius: 5px;
+
+    opacity: 0;
+    transition: 0.7s all ease-in-out;
+    transform: translateY(30px); /* Sets the position of the element -30px to the left */
 }
 
 
@@ -211,31 +215,20 @@ hr.baseBreak {
 }
 
 
-    /* Main content fade effects */
-
-    .beforeScroll {
-        opacity: 0;
-        transition: 0.7s all ease-in-out;
-        transform: translateY(30px); /* Sets the position of the element -30px to the left */
-    }
-
-    .afterScroll {
-        opacity: 1;
-        transform: translateX(0px); /* Repositions element where it was originally after JS adds class to it */
-    }
-
-    /* -- End Main conentent fade effects */
-
 .outro {
     text-align: center;
     background-color: #f2f2f262;
     width: 80%;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     border-radius: 5px;
     line-height: 1.6;
     font-size: 19px;
     font-style: italic;
-    padding: 50px 100px 100px 100px;
+    padding: 50px;
+
+    opacity: 0;
+    transition: 0.7s all ease-in-out;
+    transform: translateX(30px);
 }
 
 .outro h2 {
@@ -262,6 +255,7 @@ hr.baseBreak {
     background-color: #ffe000;
     box-shadow: -1px 2px 2px 0.5px rgb(0 0 0);
 }
+
 
 /* End Main Content */
 
@@ -345,7 +339,7 @@ input[type=text],[type=tel], select, textarea {
     width: 100%;
     height: 200px;
     bottom: -60px; /* Sets the footer under the above content */
-    box-shadow: 0 0 7px 0 rgb(51, 51, 51);
+    border-top: 1px solid grey;
     margin-top: 60px;
     padding-left: 40px;
 }
@@ -377,6 +371,13 @@ input[type=text],[type=tel], select, textarea {
 }
 
 /* -- End Footer */
+
+/* JS class effect */
+
+.afterScroll {
+    opacity: 1;
+    transform: translateX(0px); /* Repositions element where it was originally after JS adds class to it */
+}
 
 /* Media Queries */
 
