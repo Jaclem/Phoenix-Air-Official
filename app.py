@@ -33,15 +33,12 @@ def form():
     customer_info = [name, email, phone_number, message]
     full_message = '\n\n'.join(customer_info)
     
-    company_email = "bobpairserv@aol.com"
+    company_email = "Bobpairserv@aol.com"
 
     # Creating a server that uses the smtp port for gmail, logs into email I created, and sends an email to the company email variable made above.
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(userEmail,userPass)
-    
-    # Sendmail(From select email, to the companies email, with the message that is joined together in the above variables)
-    server.sendmail(userEmail, company_email, full_message)
 
     # If statement to give the user an error if they do not put in all form fields as well as keep the information on the form fields that they did fill in as to not have
     # them fill it in again.
@@ -53,10 +50,13 @@ def form():
             email=email, 
             phone_number=phone_number, 
             message=message)
+    else:
+        
+        # Sendmail(From select email, to the companies email, with the message that is joined together in the above variables)
+        server.sendmail(userEmail, company_email, full_message)
+        success_statement = "Your message has been sent succesfully!"
 
-    success_statement = "Your message has been sent succesfully!"
-
-    return render_template("contact.html", success_statement=success_statement) 
+        return render_template("contact.html", success_statement=success_statement) 
 
 
 
