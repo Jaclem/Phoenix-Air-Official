@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request
+from flask_talisman import Talisman
 import smtplib
 import os
 
 app = Flask(__name__)
+
+# Should default all traffic to https
+Talisman(app)
 
 # Environment variables for encrypted user email and password.
 userEmail = os.environ.get('USER_EMAIL')
