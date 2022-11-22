@@ -68,6 +68,7 @@ nav li, a {
     transition: all 0.3s ease 0s;
     font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
     color: rgba(31, 30, 30, 0.781);
 }
 
@@ -170,9 +171,9 @@ hr.baseBreak {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 95%;
+    /* width: 95%; */
     margin: 0 auto;
-    background-color:rgb(51, 51, 51);
+    background-color: rgb(235 235 235 / 14%);
     border-radius: 5px;
 
     opacity: 0;
@@ -182,13 +183,15 @@ hr.baseBreak {
 
 
 .container h2 {
-    color: rgb(110 53 54);
+    color: rgba(31, 30, 30, 0.781);
     padding: 20px;
+    font-style: oblique;
+    text-align: center;
 }
 
 .container div{
-    box-shadow: 0 8px 8px 0 rgb(0 0 0 / 68%);
-    background-color: #fffee6;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 22%);
+    background-color: rgb(255 255 255);
     text-align: center;
     border-radius: 7px;
     margin: 40px 20px;
@@ -198,7 +201,7 @@ hr.baseBreak {
 .break {
     flex-basis: 100%;
     height: 2px;
-    background-color: #3e3e3e;
+    background-color: #ffffff;
   }
 
 
@@ -206,12 +209,14 @@ hr.baseBreak {
 .col-2 img,
 .col-3 img {
     height: 340px;
+    border-radius: 10px 10px 0 0;
 }
 
 .col-4 img,
 .col-5 img,
 .col-6 img {
     height: 500px;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -356,7 +361,7 @@ input[type=text],[type=tel], select, textarea {
 .address, .team, .contact-info {
 /* Spacing out the footer text */
     padding: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
     line-height: 1.4;
 }
 
