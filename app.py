@@ -1,7 +1,7 @@
 # If any new libraries are added make sure to add it to the requirements.txt file by running
 # pip freeze > requirements.txt this way Heroku will be able to update.
 from flask import Flask, render_template, request
-# from flask_talisman import Talisman
+from flask_talisman import Talisman
 import smtplib
 import os
 
